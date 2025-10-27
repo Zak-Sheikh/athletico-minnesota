@@ -3655,3 +3655,41 @@ body.no-scroll { overflow: hidden; }
   }
 }
 
+/* Center site title properly on small screens */
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0.5rem 1rem;
+}
+
+/* Ensure logo and title stay centered in available space */
+.header-bar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* allows equal space on both sides */
+  text-align: center;
+}
+
+/* Keep title centered even when hamburger appears */
+.header-bar h1,
+.header-bar span {
+  text-align: center;
+  margin: 0 auto;
+  flex: none;
+}
+
+/* Make sure hamburger doesn’t shrink logo space */
+.hamburger {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* Optional: Adjust title on smaller screens */
+@media (max-width: 600px) {
+  .header-bar span {
+    font-size: 1.4rem;
+  }
+}
