@@ -1,0 +1,176 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Athletico Minnesota</title>
+    <meta name="description" content="Contact Athletico Minnesota — email, phone, and training locations." />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    
+    <!-- Header (shared site chrome) -->
+    <header>
+        <div class="header-bar">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Athletico Minnesota logo" width="120" height="120" />
+                <span>Athletico Minnesota</span>
+            </a>
+
+            <div class="nav-and-cta">
+                <nav id="site-nav" aria-label="Primary">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="schedules.html">Schedules</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="policies.html">Policies</a></li>
+                        <li><a class="active" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <a class="header-cta" href="https://forms.gle/E1RqeQTMgJFA533W8">Join Now</a>
+                </div>
+            </div>
+
+            <button class="hamburger" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero contact-hero" style="background-image:url('images/heroes/hero-contact.webp');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Contact Athletico Minnesota</h1>
+            <p>Questions about teams, training, or registration? We’re here to help.</p>
+            <a class="cta-button" href="#message">Send a Message</a>
+        </div>
+    </section>
+
+    <!-- Contact cards -->
+    <section class="section" id="contact-cards">
+        <div class="container">
+            <div class="fancy-section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Reach us by email or phone, or visit one of our training sites.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- General -->
+                <article class="card contact-card">
+                    <div class="chip-row"><span class="chip">General</span></div>
+                    <h3>Email & Phone</h3>
+                    <p>We typically reply within 24–48 hours on non-training days.</p>
+                    <p><strong>✉️ Email:</strong> <a href="mailto:contact@athletico.mn">contact@athletico.mn</a></p>
+                    <p><strong>📞 Phone:</strong> <a href="tel:+15551234567">(555) 123-4567</a></p>
+                    <p class="note">Office hours: Mon–Fri, 9:00 AM–5:00 PM</p>
+                </article>
+
+                <!-- Rosemount -->
+                <article class="card contact-card">
+                    <div class="chip-row">
+                        <span class="chip">Rosemount</span>
+                        <span class="chip">Elementary & Middle School</span>
+                    </div>
+                    <h3>MAS South Metro Islamic Center</h3>
+                    <p>15400 S Robert Trail, Rosemount, MN 55068</p>
+                    <p><strong>Training:</strong> Tue–Thu · 5:00–7:00 PM</p>
+                    <div class="btn-row">
+                        <a class="pill-link secondary" target="_blank" rel="noopener" href="https://maps.google.com/?q=15400+S+Robert+Trail,+Rosemount,+MN+55068">Open in Maps</a>
+                        <a class="pill-link" href="schedules.html#training">View Schedules</a>
+                    </div>
+                </article>
+
+                <!-- Bloomington -->
+                <article class="card contact-card">
+                    <div class="chip-row">
+                        <span class="chip">Bloomington</span>
+                        <span class="chip">Elementary & Middle School</span>
+                    </div>
+                    <h3>Dar Al-Farooq Islamic Center</h3>
+                    <p>8201 Park Ave S, Minneapolis, MN 55420</p>
+                    <p><strong>Training:</strong> Mon–Wed · 5:00–7:00 PM</p>
+                    <div class="btn-row">
+                        <a class="pill-link secondary" target="_blank" rel="noopener" href="https://maps.google.com/?q=8201+Park+Ave+S,+Minneapolis,+MN+55420">Open in Maps</a>
+                        <a class="pill-link" href="schedules.html#training">View Schedules</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple message form -->
+    <section class="section" id="message">
+        <div class="container">
+            <div class="fancy-section-header">
+                <h2 class="section-title">Send a Message</h2>
+                <p class="section-subtitle">We’ll follow up as soon as we can.</p>
+            </div>
+
+            <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+                <div class="form-grid">
+                    <label class="form-field">
+                        <span>Name</span>
+                        <input type="text" name="name" required />
+                    </label>
+
+                    <label class="form-field">
+                        <span>Email</span>
+                        <input type="email" name="email" required />
+                    </label>
+
+                    <label class="form-field full">
+                        <span>Message</span>
+                        <textarea name="message" rows="6" required></textarea>
+                    </label>
+                </div>
+
+                <button class="cta-button" type="submit">Send</button>
+                <p class="form-note">Prefer email? Write us at <a href="mailto:contact@athletico.mn">contact@athletico.mn</a>.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Athletico Minnesota logo" loading="lazy" />
+                    <span>Athletico Minnesota</span>
+                </div>
+                <p class="footer-tagline">Community soccer for Minneapolis–Saint Paul.</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Quick links">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schedules.html">Schedules</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="https://forms.gle/E1RqeQTMgJFA533W8">Registration</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-contact">
+                <h4 class="footer-heading">Contact</h4>
+                <p>📞 (555) 123-4567</p>
+                <p>✉️ <a href="mailto:contact@athletico.mn">contact@athletico.mn</a></p>
+                <p>📍 Minneapolis–Saint Paul, Minnesota</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Athletico Minnesota. All rights reserved.</p>
+            <p>Website by Zak Sheikh</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

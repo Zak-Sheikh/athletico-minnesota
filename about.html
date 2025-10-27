@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About | Athletico Minnesota</title>
+    <meta name="description" content="About Athletico Minnesota: our mission, philosophy, training locations, and pathway."/>
+    <link rel="stylesheet" href="css/styles.css"/>
+
+    <!-- fonts (match other pages) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- hero image (swap with your actual file) -->
+    <link rel="preload" as="image" href="images/heroes/hero-about.webp" fetchpriority="high">
+</head>
+<body>
+    <div class="scroll-indicator"></div>
+
+    <!-- Header (same as other pages) -->
+    <header>
+        <div class="header-bar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Athletico Minnesota" width="140" height="140">
+            <span>Athletico Minnesota</span>
+        </a>
+
+        <div class="nav-and-cta">
+            <nav id="site-nav" aria-label="Primary">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedules.html">Schedules</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+            <div class="header-right">
+                <a class="header-cta" href="https://forms.gle/E1RqeQTMgJFA533W8">Join Now</a>
+            </div>
+        </div>
+
+        <button class="hamburger" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" style="background-image:url('images/heroes/hero-about.webp');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>About Athletico Minnesota</h1>
+            <p>Community-first soccer. Player-centered coaching. A clear pathway to grow.</p>
+            <a class="cta-button" href="https://forms.gle/E1RqeQTMgJFA533W8">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="section" id="who">
+        <div class="container">
+            <div class="fancy-section-header">
+                <h2 class="section-title">Who We Are</h2>
+                <p class="section-subtitle">A club built for development, belonging, and love of the game.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="card">
+                    <div class="chip-row"><span class="chip">Community</span></div>
+                    <h3>Community-First</h3>
+                    <p>We keep soccer accessible with inclusive culture, financial help, and family-friendly events.</p>
+                </article>
+
+                <article class="card">
+                    <div class="chip-row"><span class="chip">Coaching</span></div>
+                    <h3>Player-Centric</h3>
+                    <p>Age-appropriate training plans focused on fundamentals, confidence, and healthy competition.</p>
+                </article>
+
+                <article class="card">
+                    <div class="chip-row"><span class="chip">Pathway</span></div>
+                    <h3>Growth Pathway</h3>
+                    <p>From first touches to competitive play—clear steps to learn, develop, and lead.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Philosophy (split panel like Teams) -->
+    <section class="section" id="philosophy">
+        <div class="container">
+            <div class="fancy-section-header">
+                <h2 class="section-title">Our Philosophy</h2>
+                <p class="section-subtitle">Train the whole player—technical, tactical, physical, and social.</p>
+            </div>
+
+            <div class="panel-split">
+                <article class="card feature panel-copy">
+                    <span class="chip">Framework</span>
+
+                    <h3>How We Coach</h3>
+                    <ul class="checklist">
+                        <li><strong>Ball mastery → decision making:</strong> technique first, then speed of play.</li>
+                        <li><strong>Age-appropriate:</strong> sessions sized for learning—small-sided, fun, and active.</li>
+                        <li><strong>Positive feedback:</strong> safe environment, confidence building, leadership chances.</li>
+                    </ul>
+
+                    <div class="cta-container">
+                        <a class="card-cta large" href="schedules.html">View Schedules</a>
+                    </div>
+                </article>
+
+                <div class="panel-media"
+                    style="background-image:url('images/about/philosophy.webp');"
+                    role="img" aria-label="Coach guiding players during training">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where We Train -->
+    <section class="section" id="locations">
+        <div class="container">
+            <div class="fancy-section-header">
+                <h2 class="section-title">Where We Train</h2>
+                <p class="section-subtitle">Two convenient sites serving Minneapolis–Saint Paul.</p>
+            </div>
+
+            <div class="loc-grid">
+                <!-- Rosemount -->
+                <article class="loc-card card">
+                    <div class="chip-row">
+                        <span class="chip">Rosemount</span>
+                        <span class="chip">Elementary &amp; Middle School</span>
+                    </div>
+                    <h3>MAS South Metro Islamic Center</h3>
+                    <p class="loc-address">15400 S Robert Trail, Rosemount, MN 55068</p>
+                    <p class="loc-time"><strong>Tue–Thu</strong> · 5:00–7:00 PM</p>
+                    <a class="card-cta" href="schedules.html">View Schedules</a>
+                </article>
+
+                <!-- Bloomington -->
+                <article class="loc-card card">
+                    <div class="chip-row">
+                        <span class="chip">Bloomington</span>
+                        <span class="chip">Elementary &amp; Middle School</span>
+                    </div>
+                    <h3>Dar Al-Farooq Islamic Center</h3>
+                    <p class="loc-address">8201 Park Ave S, Minneapolis, MN 55420</p>
+                    <p class="loc-time"><strong>Mon–Wed</strong> · 5:00–7:00 PM</p>
+                    <a class="card-cta" href="schedules.html">View Schedules</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Player Pathway (recap) -->
+    <section class="section" id="pathway">
+        <div class="container">
+            <div class="fancy-section-header">
+                <h2 class="section-title">Player Pathway</h2>
+                <p class="section-subtitle">Clear steps that grow with your child.</p>
+            </div>
+
+            <div class="pathway-grid">
+                <article class="card pathway-card">
+                    <div class="step-badge">1</div>
+                    <h3>Learn</h3>
+                    <p>Foundations, coordination, and a love for the ball.</p>
+                </article>
+
+                <article class="card pathway-card">
+                    <div class="step-badge">2</div>
+                    <h3>Develop</h3>
+                    <p>Technique, teamwork, and decision-making in game moments.</p>
+                </article>
+
+                <article class="card pathway-card">
+                    <div class="step-badge">3</div>
+                    <h3>Compete</h3>
+                    <p>League play and clinics that challenge and inspire.</p>
+                </article>
+            </div>
+
+            <div class="pathway-cta">
+                <a class="cta-button" href="schedules.html">View Schedules</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Ready to Join the Team?</h2>
+            <a href="https://forms.gle/E1RqeQTMgJFA533W8" class="cta-button large">Register Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                <img src="images/logo.png" alt="Athletico Minnesota logo" loading="lazy" />
+                <span>Athletico Minnesota</span>
+                </div>
+                <p class="footer-tagline">Community soccer for Minneapolis–Saint Paul.</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Quick links">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedules.html">Schedules</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://forms.gle/E1RqeQTMgJFA533W8">Registration</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-contact">
+                <h4 class="footer-heading">Contact</h4>
+                <p>📞 (555) 123-4567</p>
+                <p>✉️ <a href="mailto:contact@athletico.mn">contact@athletico.mn</a></p>
+                <p>📍 Minneapolis–Saint Paul, Minnesota</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Athletico Minnesota. All rights reserved.</p>
+            <p>Website by Zak Sheikh</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

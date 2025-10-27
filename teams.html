@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teams | Athletico Minnesota</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <header>
+        <div class="header-bar">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Athletico Minnesota" width="140" height="140">
+                <span>Athletico Minnesota</span>
+            </a>
+            <div class="nav-and-cta">
+                <nav id="site-nav" aria-label="Primary"><ul class="nav-menu"><li><a href="index.html">Home</a></li><li><a href="schedules.html">Schedules</a></li><li><a href="teams.html">Teams</a></li><li><a href="about.html">About</a></li><li><a href="policies.html">Policies</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+                <div class="header-right">
+                    <a class="header-cta" href="https://forms.gle/E1RqeQTMgJFA533W8">Join Now</a>
+                </div>
+            </div>
+            <!-- Hamburger Icon (Only visible on mobile) -->
+            <button class="hamburger" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false"> &#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO (same structure as schedules) -->
+        <section class="hero" style="background-image:url('images/heroes/hero-teams.webp');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+            <h1>Teams & Pathway</h1>
+            <p>Age groups for every stage of development.</p>
+            <a class="cta-button" href="https://forms.gle/E1RqeQTMgJFA533W8">Join Now</a>
+            </div>
+        </section>
+
+        <!-- Section A: Age Groups -->
+        <section id="age-groups" class="teams-groups">
+            <div class="fancy-section-header">
+                <h2 class="section-title">Age Groups</h2>
+                <pclass="section-subtitle">Tailored training for each stage of growth.</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="age-tabs" role="tablist" aria-label="Age group tabs">
+                <input type="radio" name="age-tab" id="tab-elem" class="age-tab-radio" checked>
+                <input type="radio" name="age-tab" id="tab-middle" class="age-tab-radio">
+
+                <div class="age-tab-bar">
+                    <label class="age-tab" for="tab-elem" role="tab" aria-controls="panel-elem">
+                        Elementary School<span class="tab-range">U6–U8</span>
+                    </label>
+                    <label class="age-tab" for="tab-middle" role="tab" aria-controls="panel-middle">
+                        Middle School <span class="tab-range">U12–U13</span>
+                    </label>
+                </div>
+
+                <div class="age-panels">
+                    <!-- Elementary -->
+                    <section class="age-panel" id="panel-elem" role="tabpanel" aria-labelledby="tab-elem">
+                        <div class="panel-split">
+                            <article class="card feature panel-copy">
+                                <span class="chip">Elementary</span>
+                                <h3>U6–U8</h3>
+                                <p>
+                                    Foundations of teamwork, motor skills, and fun-focused learning.
+                                    Sessions emphasize small-sided play and enjoyment.
+                                </p>
+                                <div class="cta-container">
+                                    <a href="schedules.html" class="card-cta large">View Schedules</a>
+                                </div>
+                            </article>
+
+                            <div class="panel-media"
+                                style="background-image:url('images/teams/u6-u8.webp');"
+                                role="img" aria-label="U6–U8 training">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Middle School -->
+                    <section class="age-panel" id="panel-middle" role="tabpanel" aria-labelledby="tab-middle">
+                        <div class="panel-split">
+
+                            <article class="card feature panel-copy">
+                                <span class="chip">Middle School</span>
+                                <h3>U12–U13</h3>
+                                <p>
+                                Structured technical and tactical development, preparing players for
+                                competitive environments with age-appropriate guidance.
+                                </p>
+                                <div class="cta-container">
+                                <a href="schedules.html" class="card-cta large">View Schedules</a>
+                                </div>
+                            </article>
+
+                            <div class="panel-media"
+                                style="background-image:url('images/teams/u12-u13.webp');"
+                                role="img" aria-label="U12–U13 training">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section B: Player Pathway -->
+        <section class="pathway">
+            <div class="container">
+                <div class="fancy-section-header">
+                <h2 class="section-title">Player Pathway</h2>
+                <p class="section-subtitle">Guiding athletes from learning to leadership.</p>
+                </div>
+
+                <div class="card-grid three-col">
+                <article class="card">
+                    <h3>Learn</h3>
+                    <p>Fundamental skills and game awareness built through inclusive training.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Develop</h3>
+                    <p>Expanded tactical understanding, teamwork, and mentorship opportunities.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Compete</h3>
+                    <p>Participation in local leagues and tournaments while representing Athletico Minnesota.</p>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section C: CTA -->
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Ready to Join the Team?</h2>
+                <a href="https://forms.gle/E1RqeQTMgJFA533W8" class="cta-button large">Register Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+        <div class="footer-brand">
+            <div class="footer-logo">
+            <img src="images/logo.png" alt="Athletico Minnesota logo" />
+            <span>Athletico Minnesota</span>
+            </div>
+            <p>Community soccer for Minneapolis–Saint Paul.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Quick links">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedules.html">Schedules</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://forms.gle/E1RqeQTMgJFA533W8">Registration</a></li>
+            <li><a href="policies.html">Policies</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-contact">
+            <h4 class="footer-heading">Contact</h4>
+            <p>📞 (555) 123-4567</p>
+            <p>✉️ contact@athletico.mn</p>
+            <p>📍 Minneapolis–Saint Paul, Minnesota</p>
+        </div>
+        </div>
+        <div class="footer-bottom">
+        <p>© 2025 Athletico Minnesota. All rights reserved.</p>
+        <p>Website by Zak Sheikh</p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js" defer></script>
+</body>
+</html>
